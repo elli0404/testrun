@@ -1,0 +1,62 @@
+= Softwareentwicklung im Team: Praktische Übung 3
+:icons: font
+:icon-set: fa
+:experimental:
+:source-highlighter: rouge
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:stem: latexmath
+endif::[]
+
+== Vorbereitung 
+
+Die Vorbereitungsarbeiten müssen Sie *vor der praktischen Übung* abschließen. 
+
+Wir erwarten von Ihnen, dass Sie 
+
+* ein Headset o. ä. bereithalten und Ihr technisches Setup überprüfen. Die Korrektor:innen verwenden entweder WebEx oder Big Blue Button über https://senfcall.de/ 
+* den Aufgabentext unten gelesen und sich dazu schon Gedanken gemacht haben. 
+* Wir erwarten von Ihnen, dass Sie verstanden haben, wie 
+** testgetriebene Entwicklung funktioniert
+** Sie Tests für Spring Web MVC Controller schreiben
+
+== Ziele der Übung
+
+In der Übung sollen Sie eine kleine Webanwendung mit Spring Web MVC *testgetrieben* implementieren.
+
+== Ablauf der Übung
+
+. Schalten Sie *mindestens* das Mikrofon, aber besser auch die Kamera, ein 
+. Am Anfang gibt es eine kurze Vorstellungsrunde 
+. In der Gruppe wird kurz diskutiert, wie die Lösung angegangen werden soll, und es werden noch offene Fragen geklärt
+. Es wird festgelegt, in welcher Reihenfolge die Driver-Rolle übernommen wird
+. Die erste Person teilt Ihren Screen und übernimmt mithilfe von `mob` die Session
+. Es wird an der Problemstellung gemeinsam nach den Regeln des Mob-Programmings gearbeitet
+. Nach ca. der Hälfte der Zeit gibt es ein Feedback durch die Tutorin oder den Tutor
+. Es wird weiter an der Problemstellung gearbeitet
+. ca. 10 Minuten vor Ende der Session bekommen Sie Ihre Abschlussbewertung 
+
+== Aufgabe
+
+Twitter geht gerade den Bach runter und wir wollen Abhilfe schaffen und eine Microblogging Platform mit dem Namen Kläffer entwickeln. 
+
+image::logo.png[]
+
+Kläffer soll Nutzer:innen auf einfache Weise ermöglichen kurze Texte (bis maximal 300 Zeichen), die Kläffs genannt werden, im Internet zu veröffentlichen. 
+
+Wir wollen Kläffer testgetrieben entwickeln. Es sollen zunächst folgende Features gebaut werden.
+
+. Anzeige der vorhandenen Kläffs in umgekehrter Veröffentlichungsreihenfolge, also neuste Einträge zuerst. Die Anzeige soll paginiert sein, d.h. es werden nur eine feste Anzahl von Einträgen auf einmal angezeigt und es gibt einen Link auf weitere Seiten mit älteren Kläffs. 
+
+. Abschicken von neuen Kläffs per Formular. Es werden sowohl ein Text bis 300 Zeichen, als auch ein Username eingegeben. Der Username soll nach der ersten Eingabe weiterhin automatisch in das Formular eingefügt werden.
+
+Hinweise: 
+* Die Kläffs müssen nicht dauerhaft gespeichert werden, es ist ok, wenn alles weg ist, wenn Sie die Anwendung neu starten. 
+* Schreiben Sie *immer* erst einen Test, der ein verhalten testet, bevor Sie das Verhalten implementieren.
+* Verwenden Sie die optimale Form von Tests für die einzelnen Aufgaben. Benötigen Sie einen Web-MVC Test, oder ist ein normaler Unit-Test genauso geeignet?
+
+NOTE: Wenn wir ehrlich sind, dann ist die Funktionalität der Software kein großes Problem, die technische Herausforderung ist die Skalierbarkeit der Software. Aber die Hauptprobleme von Twitter sind eher politischer und ökonomischer Natur.
