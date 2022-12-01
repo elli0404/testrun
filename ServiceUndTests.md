@@ -53,7 +53,7 @@ public class KlaeffService {
 
 ___
 # Mögliche Testbeispiele für Service
-___
+
 ## getNumOfPages(int maxKlaeffsPerPage)
 - Wenn im Repository 3 Kläffs gespeichert sind, und wir `getNumOfPages(1)` aufrufen, dann sollen wir als Rückgabe 3 
   bekommen zB
