@@ -8,6 +8,8 @@
       xmlns:th="http://www.thymeleaf.org" lang="de">
 <!-- selber Grund, kann auch nur <html lang="de"> sein -->
 <head>
+    <meta charset="UTF-8">
+<!--  ^^ damit die äs und ös und üs vernünftig angezeigt werden -->
     <title>Kläffer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
@@ -18,7 +20,9 @@
 
 <!-- Du kannst die header, main und footer tags auch durch zB <section> oder <div> ersetzen -->
 <header>
+      
     <h2>Vergnüge die Welt mit deinem Kläff!</h2>
+      
     <form method="post" th:object="${form}" th:action="@{/}">
 <!--         Username Input -->
             <div class="form-floating"> <!-- für das Label im Input -->
@@ -53,7 +57,9 @@
 
 
 <main class="pt-5"> <!-- padding-top 5, damit die Kläffs etwas Abstand zu dem Formular haben -->
+      
     <h2>Schaue dir die aktuellen Kläffer an</h2>
+      
     <div class="card my-3" th:each="klaeff : ${currentPage}"> 
       <!--card, damit die Kläffs einen Header und einen Body haben können und stylish aussehen xD -->
       <!-- my-3 ist margin-y, damit die Kläffs nicht aneinander kleben sondern etwas Abstand haben -->
