@@ -1,5 +1,5 @@
 # Mögliche Implementierung für Service
-___
+
 
 ```java
 @Service
