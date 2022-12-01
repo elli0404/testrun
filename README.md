@@ -89,7 +89,7 @@ public class KlaeffService {
 
 
 # mögliche Testbeispiele für Service
-___
+
 ## getNumOfPages(int maxKlaeffsPerPage)
 - Wenn im Repository 3 Kläffs gespeichert sind, und wir `getNumOfPages(1)` aufrufen, dann sollen wir als Rückgabe 3 
   bekommen zB
@@ -140,7 +140,7 @@ ___
         assertThat(actual).isEqualTo(expected);
     }
     ```
-___
+
   
 ## getPages(int maxKlaeffsPerPage)
 - Wenn das Repository leer ist, gibt `getPages(x)` eine Liste mit einer leeren Liste zurück
@@ -208,7 +208,7 @@ ___
 ___ 
 
 # Hauptteil (Controller)
-___
+
 ## Mögliche Implementierung 
 
 ```java
